@@ -21,17 +21,6 @@
   --font-size-large: 2.4rem;
 }
 
-@media (min-width: 768px) {
-  :root {
-    --font-size-body: 1.6rem;
-    --font-size-heading: 2.4rem;
-    --font-size-subheading: 1.8rem;
-    --font-size-caption: 1.4rem;
-    --font-size-small: 1.2rem;
-    --font-size-large: 2.4rem;
-  }
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -80,6 +69,18 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+}
+
+/* Update the styles based on the screen sizes */
+@media (min-width: 768px) {
+  :root {
+    --font-size-body: 1.6rem;
+    --font-size-heading: 2.4rem;
+    --font-size-subheading: 1.8rem;
+    --font-size-caption: 1.4rem;
+    --font-size-small: 1.2rem;
+    --font-size-large: 2.4rem;
+  }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
